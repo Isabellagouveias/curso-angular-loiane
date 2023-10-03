@@ -13,7 +13,7 @@
     <img src="{{ urlImagem }}" />
     <img [src]="urlImagem" />
   </article> -->
-  <article>
+  <!-- <article>
     <h3>Class e Style Binding</h3>
     <div>
       Selecione uma classe:
@@ -62,6 +62,31 @@
       >
         Esse texto aparece somente em caso de erro.
       </div>
+    </div>
+  </article> -->
+  <article>
+    <h3>Event Binding</h3>
+    <div>
+      <button class="btn btn-primary" (click)="botaoClicado()">
+        Me clique!
+      </button>
+      <br /><br />
+      <input
+        type="text"
+        (keyup)="onKeyUp($event)"
+        (keyup.enter)="salvarValor(campoInput.value)"
+        (blur)="salvarValor(campoInput.value)"
+        #campoInput
+      />
+      <p>Valor atual: {{ valorAtual }}</p>
+      <p>Valor salvo: {{ valorSalvo }}</p>
+      <br />
+      <span
+        (mouseover)="onMouseOverOut()"
+        (mouseout)="onMouseOverOut()"
+        [class.highlight]="isMouseOver"
+        >Passe o mouse sobre mim</span
+      >
     </div>
   </article>
 </section>
