@@ -1,5 +1,4 @@
 import { Component } from '@angular/core';
-
 @Component({
   selector: 'app-data-binding',
   templateUrl: './data-binding.component.html',
@@ -22,9 +21,11 @@ export class DataBindingComponent {
   cursoAngular: boolean = true;
   urlImagem =
     'https://www.alura.com.br/artigos/assets/como-comecar-com-angular/como-comecar-com-angular.png';
+
   valorAtual: string = '';
   valorSalvo = '';
   isMouseOver: boolean = false;
+
   getValor() {
     return 1;
   }
