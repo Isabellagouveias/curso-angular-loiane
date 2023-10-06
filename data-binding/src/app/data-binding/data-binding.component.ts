@@ -27,7 +27,7 @@ export class DataBindingComponent {
   isMouseOver: boolean = false;
 
   nomeDoCurso: string = 'Angular';
-
+  valorInicial = 15;
   getValor() {
     return 1;
   }
@@ -47,6 +47,10 @@ export class DataBindingComponent {
   onKeyUp(evento: KeyboardEvent) {
     const inputElement = evento.target as HTMLInputElement;
     this.valorAtual = inputElement.value;
+  }
+
+  onMudouValor(evento: any) {
+    console.log(evento.novoValor);
   }
 
   onMouseOverOut() {
