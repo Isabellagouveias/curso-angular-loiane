@@ -26,6 +26,8 @@ export class DataBindingComponent {
   valorSalvo = '';
   isMouseOver: boolean = false;
 
+  nomeDoCurso: string = 'Angular';
+
   getValor() {
     return 1;
   }
