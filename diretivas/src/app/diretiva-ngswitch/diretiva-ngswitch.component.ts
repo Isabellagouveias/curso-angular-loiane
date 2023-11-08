@@ -6,5 +6,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./diretiva-ngswitch.component.css'],
 })
 export class DiretivaNgswitchComponent {
-  aba: string = 'home';
+  aba = 'home';
 }
